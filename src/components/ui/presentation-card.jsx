@@ -3,9 +3,13 @@ import { Avatar, Badge, Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 export default function PresentationCard() {
     return (
-        <Flex>
+        <Flex flexDirection={{
+            base:"column",
+            md:"row",
+            sm:"column"
+        }}>
         <Box>
-            <Box>
+            <Box align={"center"}>
                 <Avatar size="2xl" src="/favicon.jpg" />
             </Box>
             <Box textAlign={"center"}>

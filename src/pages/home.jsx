@@ -1,13 +1,7 @@
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import PresentationCard from "../components/ui/presentation-card";
+import Technology from "../components/technologies/Technologies"
 
-function TechIcon({ id }) {
-    return (
-        <Box height={"45px"} margin={"5px"}>
-            <img height={"100%"} width={"450px"} src={"/icons/technologies/" + id + ".webp"} alt={id + " icon"}/>
-        </Box>
-    )
-}
 export default function Home() {
     return (
         <>
@@ -32,32 +26,7 @@ export default function Home() {
                     leche, 🥐 Media lunas and 🍨 Menta Granizada ice cream.
                 </Text>
             </Box>
-        </Box>
-
-        <Box>
-
-            <Box marginTop={"20px"}>
-                <Heading size={"xl"}>Technology</Heading>
-            </Box>
-            <Flex marginTop={"5px"}>
-                <TechIcon id={"csharp"} />
-                <TechIcon id={"electron"} />
-                <TechIcon id={"graphql"} />
-                <TechIcon id={"html"} />
-                <TechIcon id={"java"} />
-                <TechIcon id={"javascript"} />
-                <TechIcon id={"mongodb"} />
-                <TechIcon id={"mysql"} />
-                <TechIcon id={"nestjs"} />
-                <TechIcon id={"nginx"} />
-                <TechIcon id={"nodejs"} />
-                <TechIcon id={"python"} />
-                <TechIcon id={"react"} />
-                <TechIcon id={"redis"} />
-                <TechIcon id={"relay"} />
-                <TechIcon id={"typescript"} />
-                <TechIcon id={"unity"} />
-            </Flex>
+            <Technology/>
         </Box>
         </>
     )
