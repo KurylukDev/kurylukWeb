@@ -5,7 +5,7 @@ function TechIcon({ id }) {
     return (
         <WrapItem>
         <Box height={"45px"} margin={"5px"}>
-            <img height={"100%"} width={"100%"} src={"/icons/technologies/" + id + ".webp"} alt={id + " icon"}/>
+            <img height={"100%"} width={"45px"} src={"/icons/technologies/" + id + ".webp"} alt={id + " icon"} title={id}/>
         </Box>
         </WrapItem>
     )
@@ -17,25 +17,24 @@ export default function Technology() {
             <Box marginTop={"0px"}>
 <Heading size={"xl"}>Technology</Heading>
 </Box>
-<Flex marginTop={"5px"}>
+<Flex marginTop={"15px"} justify={"start"}>
 <Wrap>
-<TechIcon id={"csharp"} />
-<TechIcon id={"electron"} />
-<TechIcon id={"graphql"} />
 <TechIcon id={"html"} />
-<TechIcon id={"java"} />
+<TechIcon id={"css"} />
 <TechIcon id={"javascript"} />
-<TechIcon id={"mongodb"} />
-<TechIcon id={"mysql"} />
-<TechIcon id={"nestjs"} />
-<TechIcon id={"nginx"} />
-<TechIcon id={"nodejs"} />
-<TechIcon id={"python"} />
-<TechIcon id={"react"} />
-<TechIcon id={"redis"} />
-<TechIcon id={"relay"} />
 <TechIcon id={"typescript"} />
-<TechIcon id={"unity"} />
+<TechIcon id={"react"} />
+<TechIcon id={"redux"} />
+<TechIcon id={"sass"} />
+<TechIcon id={"tailwindcss"} />
+<TechIcon id={"nextjs"} />
+<TechIcon id={"node"} />
+<TechIcon id={"python"} />
+<TechIcon id={"flask"} />
+<TechIcon id={"django"} />
+<TechIcon id={"git"} />
+<TechIcon id={"github"} />
+<TechIcon id={"chakara"} />
 </Wrap>
 </Flex>
 </Box>

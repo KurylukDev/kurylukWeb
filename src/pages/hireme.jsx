@@ -1,4 +1,5 @@
 import { Box, Heading, Text, UnorderedList } from "@chakra-ui/react";
+import ContactForm from "../components/form/FormEmail"
 
 export default function HireMe() {
     return (
@@ -8,7 +9,7 @@ export default function HireMe() {
                 lorem
 
             </Text>
-
+            <ContactForm/>
             <Heading color={"gray.500"} margin={"20px 0"} size={"md"}>Project Name</Heading>
             <Box justifyContent={"center"} display={"flex"}>
                 <img
