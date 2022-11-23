@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Container from './components/layout/container/container';
 import Navbar from './components/layout/navbar/navbar';
 import HireMe from './pages/hireme';
+import Cv from './pages/Cv'
 
 import Home from './pages/home';
 import Projects from './pages/projects';
@@ -22,6 +23,7 @@ function App() {
             <Route index path="/" element={<Home/>} />
             <Route index path="/projects" element={<Projects/>} />
             <Route index path="/hireme" element={<HireMe/>} />
+            <Route index path="/cv" element={<Cv/>} />
           </Routes>
         </Container>
       </BrowserRouter>

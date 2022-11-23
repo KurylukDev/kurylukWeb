@@ -45,7 +45,7 @@ export default function Sidebar() {
                     display={"flex"}
                     justifyContent={"center"}
                     colorScheme={"purple"}
-                    href={"https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"}
+                    href={"https://www.linkedin.com/in/simon-femia-kuryluk/"}
                     target={"_blank"}
                     referrerPolicy={"no-referrer"}
                 >Linkedin</Button>

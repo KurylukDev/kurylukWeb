@@ -1,7 +1,7 @@
 import { Box, Heading, Text, UnorderedList } from "@chakra-ui/react";
 import ContactForm from "../components/form/FormEmail"
 
-export default function HireMe() {
+export default function Cv() {
     return (
         <Box>
             <Heading size={"xl"}>Hire me</Heading>
@@ -11,6 +11,14 @@ export default function HireMe() {
             </Text>
             <ContactForm/>
             <Heading color={"gray.500"} margin={"20px 0"} size={"md"}>Project Name</Heading>
+            <Box justifyContent={"center"} display={"flex"}>
+                <img
+                src="/cv.jpg"
+                type="application/pdf"
+                width={"80%"}
+                height={"80%"}
+                ></img>
+            </Box>
             <Text color={"gray.500"}>
                 Agregar Curriculum + Boton de descarga
             </Text>
