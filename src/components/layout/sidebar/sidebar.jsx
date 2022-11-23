@@ -34,7 +34,7 @@ export default function Sidebar() {
                     display={"flex"}
                     justifyContent={"center"}
                     colorScheme={"purple"}
-                    href={"https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"}
+                    href={"mailto:simonfk2000@gmail.com"}
                     target={"_blank"}
                     referrerPolicy={"no-referrer"}
                 >Email</Button>
