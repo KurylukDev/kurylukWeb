@@ -9,7 +9,7 @@ export default function Home() {
             <PresentationCard />
 
             <Box marginTop={"20px"}>
-                <Heading size={"xl"}>Who am i?</Heading>
+                <Heading size={"xl"}>Who am I?</Heading>
                 <Text>
                     My name is Simon, I am a 22yo programmer from Argentina who likes to develop
                     📖 libraries, 💻 APIs, 💜 utilities for People, 🎮 games, 💸 crypto and many more
