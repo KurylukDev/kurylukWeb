@@ -13,12 +13,8 @@
       "label": "React"
     },
     {
-      "id": "python",
-      "label": "Python"
-    },
-    {
-      "id": "libraries",
-      "label": "Libraries"
+      "id": "nodejs",
+      "label": "NodeJS"
     },
     {
       "id": "web",
@@ -39,80 +35,80 @@
   ],
   "projects": [
     {
-      "name": "Projecto",
+      "name": "Create random Password",
       "description": "Descripcion",
       "categories": ["javascript", "react", "web"],
       "thumbnail": "/thumbnails/advanced-auth.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto2",
+      "name": "Password Save",
       "description": "Descripcion",
-      "categories": ["python", "libraries", "backend"],
-      "thumbnail": "/thumbnails/advanced-parties.jpg",
+      "categories": ["reactnative", "mobile", "typescript"],
+      "thumbnail": "/thumbnails/password.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto3",
+      "name": "Pokedex",
       "description": "Descripcion.",
       "categories": ["typescript", "react", "web"],
-      "thumbnail": "/thumbnails/asm.jpg",
+      "thumbnail": "/thumbnails/pokedex.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto4",
+      "name": "Crypto Api",
       "description": "Descripcion.",
       "categories": ["javascript", "react", "web"],
-      "thumbnail": "/thumbnails/class-serializer.png",
+      "thumbnail": "/thumbnails/crypto.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto5",
+      "name": "Truchofity",
       "description": "Descripcion.",
-      "categories": ["typescritp", "react","mobile"],
-      "thumbnail": "/thumbnails/class-validator.png",
+      "categories": ["javascript", "react","web"],
+      "thumbnail": "/thumbnails/spotify.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto6",
+      "name": "Economy",
       "description": "Descripcion.",
-      "categories": ["javascript", "web", "web"],
+      "categories": ["javascript", "web", "frontend"],
       "thumbnail": "/thumbnails/economy.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto7",
+      "name": "Find Buddy",
       "description": "Descripcion.",
-      "categories": ["python", "libraries", "backend"],
-      "thumbnail": "/thumbnails/httplib.jpg",
+      "categories": ["javascript", "react", "frontend", "web", "nodejs", "backend"],
+      "thumbnail": "/thumbnails/findbuddy.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto8",
+      "name": "Ecommerce",
       "description": "Descripcion.",
-      "categories": ["python", "libraries", "backend"],
-      "thumbnail": "/thumbnails/kitty-paw.png",
+      "categories": ["javascript", "react", "frontend", "web"],
+      "thumbnail": "/thumbnails/ecommerce.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto9",
+      "name": "Task List",
       "description": "Descripcion.",
-      "categories": ["python", "libraries", "backend"],
-      "thumbnail": "/thumbnails/milkshake-odm.jpg",
+      "categories": ["javascript", "react", "frontend", "web"],
+      "thumbnail": "/thumbnails/tasklist.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Projecto10",
-      "description": "Descripcion.",
-      "categories": ["python", "libraries", "backend"],
-      "thumbnail": "/thumbnails/show-emote.jpg",
-      "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
-    },
-    {
-      "name": "Projecto11",
+      "name": "Find Buddy Mobile",
       "description": "Descripcion",
-      "categories": ["python", "libraries", "backend"],
-      "thumbnail": "/thumbnails/umivr.png",
+      "categories": ["reactnative", "mobile", "frontend", "nodejs", "backend"],
+      "thumbnail": "/thumbnails/findbuddymobile.jpg",
+      "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
+    },
+    {
+      "name": "Mobile task list",
+      "description": "Descripcion",
+      "categories": ["reactnative", "mobile", "frontend", "nodejs", "backend"],
+      "thumbnail": "/thumbnails/tasklistmobile.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     }
   ]
