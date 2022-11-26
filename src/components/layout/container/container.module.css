@@ -30,6 +30,13 @@
     .page {
         width: 100%;
     }
+    .wrapper {
+        top: 150px;
+    }
+    
+    .page {  
+        max-height: calc(100vh - 150px);
+    }
 }
 
 @media only screen and (max-width: 650px) {

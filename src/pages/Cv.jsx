@@ -1,5 +1,6 @@
 import { Box, Heading, Text, UnorderedList } from "@chakra-ui/react";
 import ContactForm from "../components/layout/form/FormEmail"
+import ModalPage from '../components/modal/Modal'
 
 export default function Cv() {
     return (
@@ -8,6 +9,7 @@ export default function Cv() {
             <Text color={"gray.500"}>
                 Agregar Curriculum + Boton de descarga
             </Text>
+            <ModalPage></ModalPage>
             <Box justifyContent={"center"} display={"flex"}>
                 <img
                 src="/cv.jpg"

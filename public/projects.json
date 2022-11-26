@@ -105,8 +105,9 @@
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
-      "name": "Mobile task list",
+      "name": "Task list Mobile",
       "description": "Descripcion",
+      "minidescription":"Descripcion",
       "categories": ["reactnative", "mobile", "frontend", "nodejs", "backend"],
       "thumbnail": "/thumbnails/tasklistmobile.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"

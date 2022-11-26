@@ -1,7 +1,8 @@
 import { Box, Flex } from "@chakra-ui/react";
 
-import { BsHouse, BsFolder, BsPersonBadge, BsSave } from "react-icons/bs"
+import { BsHouse, BsFolder, BsPersonBadge} from "react-icons/bs"
 import { BsDiscord, BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs"
+import CvModal from '../../modal/Modal'
 
 import SocialButton from "./social-button";
 
@@ -16,7 +17,7 @@ export default function Navbar() {
                     <PageButton Icon={BsHouse} link={"/"}>Me</PageButton>
                     <PageButton Icon={BsFolder} link={"/projects"}>Projects</PageButton>
                     <PageButton Icon={BsPersonBadge} link={"/hireme"}>Hire Me</PageButton>
-                    <PageButton Icon={BsSave} link={"/cv"}>CV</PageButton>
+                    <CvModal></CvModal>
                 </Box>
                 <Flex className={styles["social"]}>
                     <SocialButton Icon={BsDiscord} link="https://discord.gg/tUxckJcjtH" scheme="teal" />

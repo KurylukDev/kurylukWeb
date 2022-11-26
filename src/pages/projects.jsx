@@ -8,6 +8,17 @@ import {
   TagLabel,
   Text,
 } from "@chakra-ui/react";
+import React from 'react'
+import {
+	Button,
+	Modal,
+	ModalOverlay,
+	ModalContent,
+	ModalHeader,
+	ModalFooter,
+	ModalBody,
+	ModalCloseButton,
+    useDisclosure} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 var setCategory;
@@ -36,16 +47,18 @@ function CategoryButton({ data }) {
 }
 
 function ProjectCard({ link, name, description, categories, thumb }) {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
+    <>
     <Box
-      as="a"
-      href={link}
+    onClick={onOpen}
       target="_blank"
       referrerPolicy="no-referrer"
       cursor="pointer"
       transition=".1s all ease-in-out"
       _hover={{
-        transform: "scale(1.1)",
+        transform: "scale(1.05)",
       }}
     >
       <Image src={thumb} borderRadius={"10px 10px 0 0"} />
@@ -61,20 +74,82 @@ function ProjectCard({ link, name, description, categories, thumb }) {
 
         {categories.map((item, index) => (
           <Tag
-            key={index}
-            marginTop={"10px"}
-            marginRight={"2px"}
-            size={"md"}
-            borderRadius="full"
-            variant="solid"
-            bg={"#7099"}
-            color={"#fff"}
+          key={index}
+          marginTop={"10px"}
+          marginRight={"2px"}
+          size={"md"}
+          borderRadius="full"
+          variant="solid"
+          bg={"#7099"}
+          color={"#fff"}
           >
             <TagLabel>{item}</TagLabel>
           </Tag>
         ))}
       </Box>
     </Box>
+      <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
+      <ModalOverlay />
+      <ModalContent>
+      <ModalHeader>Create your account</ModalHeader>
+      <ModalCloseButton />
+      <ModalBody pb={6}>
+      <Image src={thumb} borderRadius={"10px 10px 0 0"} />
+      <Box
+        backgroundColor={"purple.800"}
+        padding={"10px"}
+        borderRadius={"0 0 10px 10px"}
+      >
+        <Heading size={"sm"}>{name}</Heading>
+        <Text color={"gray.300"} fontSize={"15px"}>
+          {description}
+        </Text>
+
+        {categories.map((item, index) => (
+          <Tag
+          key={index}
+          marginTop={"10px"}
+          marginRight={"2px"}
+          size={"md"}
+          borderRadius="full"
+          variant="solid"
+          bg={"#7099"}
+          color={"#fff"}
+          >
+            <TagLabel>{item}</TagLabel>
+          </Tag>
+        ))}
+      </Box>
+      </ModalBody>
+  
+      <ModalFooter>
+        <Button colorScheme='blue' mr={3}
+        as="a"
+        href={link}
+        target="_blank"
+        referrerPolicy="no-referrer"
+        cursor="pointer"
+        transition=".1s all ease-in-out"
+        _hover={{
+          transform: "scale(1.05)",
+        }}>
+        Live
+        </Button>
+        <Button
+            as="a"
+            href={link}
+            target="_blank"
+            referrerPolicy="no-referrer"
+            cursor="pointer"
+            transition=".1s all ease-in-out"
+            _hover={{
+              transform: "scale(1.05)",
+            }}
+        >Github</Button>
+      </ModalFooter>
+      </ModalContent>
+    </Modal>
+    </>
   );
 }
 
@@ -91,41 +166,41 @@ function ProjectDeck({ projects, categories }) {
             onChange={(e) => {
               setSearchTerm(e.target.value);
             }}
-          />
+            />
         </Box>
         <Box marginTop={"10px"}>
           <CategoryButton
             data={{ label: "All", projects: projects.length, id: "*" }}
-          />
+            />
           {categories.map((item, index) => (
             <CategoryButton data={item} key={index} />
-          ))}
+            ))}
         </Box>
       </Box>
 
       <Box marginTop={"30px"}>
         <SimpleGrid minChildWidth={"180px"} spacing={10}>
           {projects.filter((item) => {
-              const term = searchTerm.toLowerCase();
-              const name = item.name.toLowerCase();
-              const desc = item.description.toLowerCase();
-
-              return name.includes(term) || desc.includes(term);
-            })
-            .filter((item) => {
-              return category === "*"
-                ? true
-                : item.categories.includes(category);
-            })
-            .map((item, index) => (
-              <ProjectCard
-                key={index}
-                name={item.name}
-                description={item.description}
-                categories={item.categories}
-                thumb={item.thumbnail}
-                link={item.link}
-              />
+            const term = searchTerm.toLowerCase();
+            const name = item.name.toLowerCase();
+            const desc = item.description.toLowerCase();
+            
+            return name.includes(term) || desc.includes(term);
+          })
+          .filter((item) => {
+            return category === "*"
+            ? true
+            : item.categories.includes(category);
+          })
+          .map((item, index) => (
+            <ProjectCard
+            key={index}
+            name={item.name}
+            description={item.description}
+            categories={item.categories}
+            thumb={item.thumbnail}
+            link={item.link}
+            />
             ))}
         </SimpleGrid>
       </Box>
