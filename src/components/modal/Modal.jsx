@@ -18,7 +18,7 @@ function CvModal() {
   
 	return (
 		<>
-		<Button onClick={onOpen}><BsSave/><p>Cv</p></Button>
+		<Button bg={"none"} onClick={onOpen}><BsSave/><p>Cv</p></Button>
   
 		<Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
 		  <ModalOverlay />

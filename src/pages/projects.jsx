@@ -1,5 +1,6 @@
 import {
   Box,
+  Flex,
   Heading,
   Image,
   Input,
@@ -7,10 +8,7 @@ import {
   Tag,
   TagLabel,
   Text,
-} from "@chakra-ui/react";
-import React from 'react'
-import {
-	Button,
+  Button,
 	Modal,
 	ModalOverlay,
 	ModalContent,
@@ -18,7 +16,10 @@ import {
 	ModalFooter,
 	ModalBody,
 	ModalCloseButton,
-    useDisclosure} from "@chakra-ui/react";
+    useDisclosure,
+} from "@chakra-ui/react";
+import React from 'react'
+
 import { useEffect, useState } from "react";
 
 var setCategory;
@@ -47,6 +48,7 @@ function CategoryButton({ data }) {
 }
 
 function ProjectCard({ link, name, description, categories, thumb }) {
+      {/* FUNCION MODAL OPEN AND CLOSE */}
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -88,19 +90,24 @@ function ProjectCard({ link, name, description, categories, thumb }) {
         ))}
       </Box>
     </Box>
-      <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
+
+    {/*MODAL DEL PROYECTO*/}
+
+      <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} closeOnEsc={true} size={"6xl"}  motionPreset='slideInBottom'>
       <ModalOverlay />
-      <ModalContent>
-      <ModalHeader>Create your account</ModalHeader>
+      <ModalContent >
+      <ModalHeader><img src="/public/favicon.png" width={"25px"}></img></ModalHeader>
       <ModalCloseButton />
-      <ModalBody pb={6}>
-      <Image src={thumb} borderRadius={"10px 10px 0 0"} />
+      <ModalBody pb={6} >
+          <Flex flexDirection={{ base:"column", sm:"column", md:"row"}}>
       <Box
         backgroundColor={"purple.800"}
         padding={"10px"}
-        borderRadius={"0 0 10px 10px"}
-      >
-        <Heading size={"sm"}>{name}</Heading>
+        borderRadius={{base:"10px 10px 0 0",md:"10px 0 0 10px"}}
+        minWidth={{base:"100%", md:"50%"}}
+        width={{ base:"100%", sm:"250px",md:"50%"}}
+        >
+        <Heading size={"xl"}>{name}</Heading>
         <Text color={"gray.300"} fontSize={"15px"}>
           {description}
         </Text>
@@ -120,6 +127,8 @@ function ProjectCard({ link, name, description, categories, thumb }) {
           </Tag>
         ))}
       </Box>
+        <Image src={thumb} borderRadius={{base:"0px 0px 10px 10px", md:"0px 10px 10px 0"}} width={{ base:"100%", md:"70%"}} />
+        </Flex>
       </ModalBody>
   
       <ModalFooter>
