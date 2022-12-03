@@ -10,7 +10,7 @@ export default function PresentationCard() {
         }}>
         <Box>
             <Box align={"center"}>
-                <Avatar size="2xl" src="/favicon.jpg" />
+                <Avatar bg={"blue.400"} size="2xl" src="/facie.png" />
             </Box>
             <Box textAlign={"center"}>
                 <Badge colorScheme={"green"}>Available to Email</Badge>
