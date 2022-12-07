@@ -44,14 +44,14 @@
     {
       "name": "Password Save",
       "description": "Descripcion",
-      "categories": ["reactnative", "mobile", "typescript"],
+      "categories": ["reactnative", "frontend", "mobile", "javascript"],
       "thumbnail": "/thumbnails/password.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Pokedex",
       "description": "Descripcion.",
-      "categories": ["typescript", "react", "web"],
+      "categories": ["javascript", "react", "web"],
       "thumbnail": "/thumbnails/pokedex.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
@@ -72,35 +72,35 @@
     {
       "name": "Economy",
       "description": "Descripcion.",
-      "categories": ["javascript", "web", "frontend"],
+      "categories": ["javascript", "frontend", "web"],
       "thumbnail": "/thumbnails/economy.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Find Buddy",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "frontend", "web", "nodejs", "backend"],
+      "categories": ["javascript", "react", "web", "frontend", "nodejs", "backend"],
       "thumbnail": "/thumbnails/findbuddy.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Ecommerce",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "frontend", "web"],
+      "categories": ["javascript", "react", "web", "frontend"],
       "thumbnail": "/thumbnails/ecommerce.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Task List",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "frontend", "web"],
+      "categories": ["javascript", "react", "web", "frontend"],
       "thumbnail": "/thumbnails/tasklist.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Find Buddy Mobile",
       "description": "Descripcion",
-      "categories": ["reactnative", "mobile", "frontend", "nodejs", "backend"],
+      "categories": ["reactnative", "frontend", "mobile", "nodejs", "backend"],
       "thumbnail": "/thumbnails/findbuddymobile.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
@@ -108,7 +108,7 @@
       "name": "Task list Mobile",
       "description": "Descripcion",
       "minidescription":"Descripcion",
-      "categories": ["reactnative", "mobile", "frontend", "nodejs", "backend"],
+      "categories": ["reactnative", "frontend", "mobile", "nodejs", "backend"],
       "thumbnail": "/thumbnails/tasklistmobile.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     }

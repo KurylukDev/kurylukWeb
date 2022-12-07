@@ -1,22 +1,24 @@
-import { Box, Heading, Text, UnorderedList } from "@chakra-ui/react";
-import ContactForm from "../components/layout/form/FormEmail"
-import ModalPage from '../components/modal/Modal'
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
 
 export default function Cv() {
     return (
         <Box>
-            <Heading size={"xl"}>Hire me</Heading>
+            <Heading display={"flex"} justifyContent={"space-between"} size={"xl"}>Hire me
+            <Button
+              as="a"
+              href="/cv.pdf"
+              download="/cv.pdf"
+              >Download</Button></Heading>
             <Text color={"gray.500"}>
                 Agregar Curriculum + Boton de descarga
             </Text>
-            <ModalPage></ModalPage>
-            <Box justifyContent={"center"} display={"flex"}>
-                <img
-                src="/cv.jpg"
+            <Box justifyContent={"center"} display={"flex"}  height={{ base:"70vh", sm:"80vh",md:"80vh"}}>
+                <embed
+                src="/cv.pdf"
                 type="application/pdf"
-                width={"80%"}
-                height={"80%"}
-                ></img>
+                width={"100%"}
+                height={"100%"}
+                ></embed>
             </Box>
         </Box>
     )

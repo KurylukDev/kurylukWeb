@@ -51,116 +51,118 @@ function ProjectCard({ link, name, description, categories, thumb }) {
       {/* FUNCION MODAL OPEN AND CLOSE */}
   const { isOpen, onOpen, onClose } = useDisclosure()
 
-  return (
-    <>
-    <Box
-    onClick={onOpen}
-      target="_blank"
-      referrerPolicy="no-referrer"
-      cursor="pointer"
-      transition=".1s all ease-in-out"
-      _hover={{
-        transform: "scale(1.05)",
-      }}
-    >
-      <Image src={thumb} borderRadius={"10px 10px 0 0"} />
+
+    return (
+      <>
       <Box
-        backgroundColor={"purple.800"}
-        padding={"10px"}
-        borderRadius={"0 0 10px 10px"}
-      >
-        <Heading size={"sm"}>{name}</Heading>
-        <Text color={"gray.300"} fontSize={"15px"}>
-          {description}
-        </Text>
-
-        {categories.map((item, index) => (
-          <Tag
-          key={index}
-          marginTop={"10px"}
-          marginRight={"2px"}
-          size={"md"}
-          borderRadius="full"
-          variant="solid"
-          bg={"#7099"}
-          color={"#fff"}
-          >
-            <TagLabel>{item}</TagLabel>
-          </Tag>
-        ))}
-      </Box>
-    </Box>
-
-    {/*MODAL DEL PROYECTO*/}
-
-      <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} closeOnEsc={true} size={"6xl"}  motionPreset='slideInBottom'>
-      <ModalOverlay />
-      <ModalContent >
-      <ModalHeader><img src="/public/favicon.png" width={"25px"}></img></ModalHeader>
-      <ModalCloseButton />
-      <ModalBody pb={6} >
-          <Flex flexDirection={{ base:"column", sm:"column", md:"row"}}>
-      <Box
-        backgroundColor={"purple.800"}
-        padding={"10px"}
-        borderRadius={{base:"10px 10px 0 0",md:"10px 0 0 10px"}}
-        minWidth={{base:"100%", md:"50%"}}
-        width={{ base:"100%", sm:"250px",md:"50%"}}
-        >
-        <Heading size={"xl"}>{name}</Heading>
-        <Text color={"gray.300"} fontSize={"15px"}>
-          {description}
-        </Text>
-
-        {categories.map((item, index) => (
-          <Tag
-          key={index}
-          marginTop={"10px"}
-          marginRight={"2px"}
-          size={"md"}
-          borderRadius="full"
-          variant="solid"
-          bg={"#7099"}
-          color={"#fff"}
-          >
-            <TagLabel>{item}</TagLabel>
-          </Tag>
-        ))}
-      </Box>
-        <Image src={thumb} borderRadius={{base:"0px 0px 10px 10px", md:"0px 10px 10px 0"}} width={{ base:"100%", md:"70%"}} />
-        </Flex>
-      </ModalBody>
-  
-      <ModalFooter>
-        <Button colorScheme='blue' mr={3}
-        as="a"
-        href={link}
+      onClick={onOpen}
         target="_blank"
         referrerPolicy="no-referrer"
         cursor="pointer"
         transition=".1s all ease-in-out"
         _hover={{
           transform: "scale(1.05)",
-        }}>
-        Live
-        </Button>
-        <Button
-            as="a"
-            href={link}
-            target="_blank"
-            referrerPolicy="no-referrer"
-            cursor="pointer"
-            transition=".1s all ease-in-out"
-            _hover={{
-              transform: "scale(1.05)",
-            }}
-        >Github</Button>
-      </ModalFooter>
-      </ModalContent>
-    </Modal>
-    </>
-  );
-}
+        }}
+      >
+        <Image src={thumb} borderRadius={"10px 10px 0 0"} />
+        <Box
+          backgroundColor={"purple.800"}
+          padding={"10px"}
+          borderRadius={"0 0 10px 10px"}
+        >
+          <Heading size={"sm"}>{name}</Heading>
+          <Text color={"gray.300"} fontSize={"15px"}>
+            {description}
+          </Text>
+  
+          {categories.map((item, index) => (
+            <Tag
+            key={index}
+            marginTop={"10px"}
+            marginRight={"2px"}
+            size={"md"}
+            borderRadius="full"
+            variant="solid"
+            bg={"#7099"}
+            color={"#fff"}
+            >
+              <TagLabel>{item}</TagLabel>
+            </Tag>
+          ))}
+        </Box>
+      </Box>
+  
+      {/*MODAL DEL PROYECTO*/}
+  
+        <Modal closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} closeOnEsc={true} size={"6xl"}  motionPreset='slideInBottom'>
+        <ModalOverlay />
+        <ModalContent >
+        <ModalHeader><p>{name} - {categories[2]}</p></ModalHeader>
+        <ModalCloseButton />
+        <ModalBody pb={6} >
+            <Flex flexDirection={{ base:"column", sm:"column", md:"row"}}>
+        <Box
+          backgroundColor={"purple.800"}
+          padding={"10px"}
+          borderRadius={{base:"10px 10px 0 0",md:"10px 0 0 10px"}}
+          minWidth={{base:"100%", md:"50%"}}
+          width={{ base:"100%", sm:"250px",md:"50%"}}
+          >
+          <Heading size={"xl"}>{name}</Heading>
+          <Text color={"gray.300"} fontSize={"15px"}>
+            {description}
+          </Text>
+  
+          {categories.map((item, index) => (
+            <Tag
+            key={index}
+            marginTop={"10px"}
+            marginRight={"2px"}
+            size={"md"}
+            borderRadius="full"
+            variant="solid"
+            bg={"#7099"}
+            color={"#fff"}
+            >
+              <TagLabel>{item}</TagLabel>
+            </Tag>
+          ))}
+        </Box>
+          <Image src={thumb} borderRadius={{base:"0px 0px 10px 10px", md:"0px 10px 10px 0"}} width={{ base:"100%", md:"50%"}} />
+          </Flex>
+        </ModalBody>
+    
+        <ModalFooter>
+          <Button colorScheme='blue' mr={3}
+          as="a"
+          href={link}
+          target="_blank"
+          referrerPolicy="no-referrer"
+          cursor="pointer"
+          transition=".1s all ease-in-out"
+          _hover={{
+            transform: "scale(1.05)",
+          }}>
+          Live
+          </Button>
+          <Button
+              as="a"
+              href={link}
+              target="_blank"
+              referrerPolicy="no-referrer"
+              cursor="pointer"
+              transition=".1s all ease-in-out"
+              _hover={{
+                transform: "scale(1.05)",
+              }}
+          >Github</Button>
+        </ModalFooter>
+        </ModalContent>
+      </Modal>
+      </>
+    );
+  }
+
 
 function ProjectDeck({ projects, categories }) {
   const [searchTerm, setSearchTerm] = useState("");
