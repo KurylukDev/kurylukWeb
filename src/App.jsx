@@ -17,7 +17,6 @@ function App() {
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <BrowserRouter>
         <Navbar />
-
         <Container>
           <Routes>
             <Route index path="/" element={<Home/>} />

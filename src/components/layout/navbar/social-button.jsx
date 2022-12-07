@@ -10,6 +10,8 @@ export default function SocialButton({link, scheme, Icon}) {
             href={link}
             target="_blank"
             referrerPolicy="no-referrer"
+            alt={"social button"}
+            desc={"social button"}
         />
     )
 }

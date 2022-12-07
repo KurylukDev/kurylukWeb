@@ -61,10 +61,10 @@ function ProjectCard({ link, name, description, categories, thumb }) {
         cursor="pointer"
         transition=".1s all ease-in-out"
         _hover={{
-          transform: "scale(1.05)",
+          transform: "scale(1.02)",
         }}
       >
-        <Image src={thumb} borderRadius={"10px 10px 0 0"} />
+        <Image src={thumb} borderRadius={"10px 10px 0 0"} width={"450px"} height={"150px"} margin={"auto"} alt={name}/>
         <Box
           backgroundColor={"purple.800"}
           padding={"10px"}
@@ -128,7 +128,7 @@ function ProjectCard({ link, name, description, categories, thumb }) {
             </Tag>
           ))}
         </Box>
-          <Image src={thumb} borderRadius={{base:"0px 0px 10px 10px", md:"0px 10px 10px 0"}} width={{ base:"100%", md:"50%"}} />
+          <Image src={thumb} borderRadius={{base:"0px 0px 10px 10px", md:"0px 10px 10px 0"}} width={{ base:"100%", md:"50%"}} alt={name} />
           </Flex>
         </ModalBody>
     
