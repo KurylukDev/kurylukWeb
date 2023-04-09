@@ -108,6 +108,9 @@
 
 .formStyle{
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   
 }
 .form-group{
@@ -117,7 +120,7 @@
 
 label{
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 input,textarea{
@@ -134,7 +137,7 @@ input,textarea{
 }
 
 textarea {
-  min-height: 250px;
+  min-height: 200px;
   resize: vertical;
   background-color: #1E1E1E;
 }
@@ -142,7 +145,6 @@ button[type='submit'] {
   background-color: #BCB4B4;
   color: black;
   font-size: 2rem;
-  display: inline-block;
   outline: none;
   border: none;
   padding: 1rem 4rem;
@@ -159,25 +161,9 @@ button[type='submit'] {
 
 .contactSection__wrapper {
   display: flex;
-  gap: 5rem;
-  margin-top: 7rem;
-  justify-content: space-between;
+  margin-top: 1rem;
+  justify-content: center;
   position: relative;
-}
-
-.contactSection__wrapper::after {
-  position: absolute;
-  content: '';
-  width: 2px;
-  height: 60%;
-  background-color: gray;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-}
-.left {
-  width: 100%;
-  max-width: 500px;
 }
 .right {
   max-width: 500px;

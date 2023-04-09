@@ -8,3 +8,7 @@ body {
     overflow: hidden;
 
   }
+
+.cvImage{
+    image-rendering: initial;
+  }

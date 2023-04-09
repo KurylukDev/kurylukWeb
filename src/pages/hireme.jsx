@@ -11,11 +11,6 @@ export default function HireMe() {
         <Heading className={["title"]}><p className={styles["title"]}>Contact</p></Heading>
         </Box>
         <Box className={styles["contactSection__wrapper"]}>
-        <Box className={styles["left"]}>
-        <Text bg={"#1E1E1E"} borderRadius={"8px"} minHeight={"500px"}>
-
-        </Text>
-        </Box>
         <Box className={styles["right"]}>
         <ContactForm />
         </Box>

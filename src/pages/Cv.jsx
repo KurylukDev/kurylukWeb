@@ -1,24 +1,23 @@
 import { Box, Heading, Text, Button } from "@chakra-ui/react";
+import '../styles/index.css'
 
 export default function Cv() {
     return (
         <Box>
             <Heading display={"flex"} justifyContent={"space-between"} size={"xl"}>Hire me
-            <Button
+            <Button fontSize={'15px'}
               as="a"
               href="/cv.pdf"
               download="/cv.pdf"
-              >Download</Button></Heading>
-            <Text color={"gray.500"}>
-                Agregar Curriculum + Boton de descarga
-            </Text>
-            <Box justifyContent={"center"} display={"flex"}  height={{ base:"70vh", sm:"80vh",md:"80vh"}}>
-                <embed
-                src="/cv.pdf"
+              >Download - Low color printing</Button></Heading>
+            <Box marginTop={"10px"} justifyContent={"center"} display={"flex"} boxShadow='dark-lg'>
+                <img
+                className={"cvImage"}
+                src="/kurylukCv.png"
                 type="application/pdf"
                 width={"100%"}
                 height={"100%"}
-                ></embed>
+                ></img>
             </Box>
         </Box>
     )

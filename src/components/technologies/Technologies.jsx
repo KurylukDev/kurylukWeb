@@ -12,7 +12,7 @@ function TechIcon({ id }) {
 }
 export default function Technology() {
     return (
-        <Box backgroundColor={"purple.900"} marginTop={"20px"} >
+        <Box backgroundColor={"purple.900"} marginTop={"20px"} marginBottom={"10px"} >
             <Box className={styles["page"]}>
             <Box marginTop={"0px"}>
 <Heading size={"xl"}>Technology</Heading>
