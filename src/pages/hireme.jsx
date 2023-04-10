@@ -10,7 +10,9 @@ export default function HireMe() {
         <Heading className={["title"]}><p className={styles["title"]}>Contact</p></Heading>
         </Box>
         <Box className={styles["contactSection__wrapper"]}>
+        <Box className={styles["form"]}>
         <ContactForm />
+        </Box>
         </Box>
       </Box>
     </Box>

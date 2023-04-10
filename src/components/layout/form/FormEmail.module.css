@@ -14,13 +14,14 @@
 label{
   width: 100%;
   margin-bottom: 1rem;
+  color: white;
 }
 
 input,textarea{
   width: 100%;
   font-size: 2rem;
   padding: 1.2rem;
-  color: #BCB4B4;
+  color: #c5c5c5;
   background-color: #1E1E1E;
   outline: none;
   border: none;
@@ -28,14 +29,22 @@ input,textarea{
   margin-top: 1rem;
   height: 50px;
 }
-
+.imgSend{
+  width: 250px;
+}
 textarea {
   min-height: 200px;
   resize: vertical;
   background-color: #1E1E1E;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
 button[type='submit'] {
-  background-color: #BCB4B4;
+  font-family: 'Montserrat Bold', Bold;
   color: black;
   font-size: 2rem;
   outline: none;
@@ -53,15 +62,16 @@ button[type='submit'] {
 }
 
 .contactSection__wrapper {
-  display: flex;
   margin-top: 1rem;
-  justify-content: center;
   position: relative;
 }
+
+.form{
+  width: 80%;
+  margin: auto;
+}
+
 @media only screen and (max-width: 768px) {
-  .contactSection__wrapper {
-    flex-direction: column;
-  }
   .contactSection__wrapper::after {
     display: none;
   }

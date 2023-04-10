@@ -14,7 +14,6 @@ export default function Cv() {
                 <img
                 className={"cvImage"}
                 src="/kurylukCv.png"
-                type="application/pdf"
                 width={"100%"}
                 height={"100%"}
                 ></img>
