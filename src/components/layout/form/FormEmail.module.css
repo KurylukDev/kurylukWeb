@@ -1,111 +1,4 @@
 
-/*.login {
-    width: 100%;
-  max-width: 400px;
-  margin: 16px auto;
-  font-size: 16px;
-}
-
-.login-header,
-.login p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.login-triangle {
-  width: 0;
-  margin-right: auto;
-  margin-left: auto;
-  border: 12px solid transparent;
-  border-bottom-color: rgba(190, 34, 221, 0.479);
-}
-
-.login-header {
-  background: rgba(7, 7, 7, 0.048);
-  padding: 20px;
-  font-size: 1.4em;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.login-container {
-  background: #807f7f0c;
-  padding: 12px;
-}
-
-.login p {
-  padding: 12px;
-}
-
-.login input {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  padding: 16px;
-  outline: 0;
-  font-family: inherit;
-  font-size: 0.95em;
-}
-
-.login button{
-    box-sizing: border-box;
-    display: block;
-    margin: auto;
-    width: 80%;
-    border-width: 1px;
-    border-style: solid;
-    padding: 16px;
-    outline: 0;
-    font-family: inherit;
-    font-size: 0.95em;
-}
-
-.login textarea {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-width: 1px;
-    border-style: solid;
-    padding: 16px;
-    outline: 0;
-    font-family: inherit;
-    font-size: 0.95em;
-  }
-
-.login input,
-.login textarea {
-  background: rgb(80, 79, 79);
-  border-color: rgba(187, 187, 187, 0.363);
-  color: rgb(252, 250, 252);
-}
-
-
-.login input:focus,
-.login textarea:focus {
-  border-color: #888;
-}
-
-.login button {
-  background: rgba(181, 70, 255, 0.514);
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-.login button:hover {
-  background: rgba(194, 13, 179, 0.575);
-}
-
-
-.login button:focus {
-  border-color: rgb(116, 0, 170);
-}
-*/
-
 .formStyle{
   width: 100%;
   display: flex;
@@ -115,7 +8,7 @@
 }
 .form-group{
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 label{
@@ -155,7 +48,7 @@ button[type='submit'] {
 /* FormSection*/
 
 .ContactSectionStyle{
-  padding: 1rem 0;
+  padding: 0.2rem 0;
   
 }
 
@@ -165,25 +58,12 @@ button[type='submit'] {
   justify-content: center;
   position: relative;
 }
-.right {
-  max-width: 500px;
-  width: 100%;
-  border-radius: 12px;
-  /* padding-left: 3rem; */
-}
 @media only screen and (max-width: 768px) {
   .contactSection__wrapper {
     flex-direction: column;
   }
   .contactSection__wrapper::after {
     display: none;
-  }
-  .left,
-  .right {
-    max-width: 100%;
-  }
-  .right {
-    padding: 4rem 2rem 2rem 2rem;
   }
 }
 

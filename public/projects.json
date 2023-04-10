@@ -5,24 +5,12 @@
       "label": "JavaScript"
     },
     {
-      "id": "typescript",
-      "label": "TypeScript"
-    },
-    {
       "id": "react",
       "label": "React"
     },
     {
       "id": "nodejs",
       "label": "NodeJS"
-    },
-    {
-      "id": "web",
-      "label": "Web"
-    },
-    {
-      "id": "mobile",
-      "label": "Mobile"
     },
     {
       "id": "frontend",
@@ -37,87 +25,65 @@
     {
       "name": "Create random Password",
       "description": "Descripcion",
-      "categories": ["javascript", "react", "web"],
+      "categories": ["frontend", "javascript", "react"],
       "thumbnail": "/thumbnails/advanced-auth.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Password Save",
       "description": "Descripcion",
-      "categories": ["reactnative", "frontend", "mobile", "javascript"],
+      "categories": ["frontend","javascript", "react"],
       "thumbnail": "/thumbnails/password.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Pokedex",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "web"],
+      "categories": ["frontend","javascript", "react"],
       "thumbnail": "/thumbnails/pokedex.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Crypto Api",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "web"],
+      "categories": ["frontend","javascript", "react"],
       "thumbnail": "/thumbnails/crypto.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Truchofity",
       "description": "Descripcion.",
-      "categories": ["javascript", "react","web"],
+      "categories": ["frontend","javascript", "react"],
       "thumbnail": "/thumbnails/spotify.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Economy",
       "description": "Descripcion.",
-      "categories": ["javascript", "frontend", "web"],
+      "categories": ["frontend", "javascript"],
       "thumbnail": "/thumbnails/economy.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Find Buddy",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "web", "frontend", "nodejs", "backend"],
+      "categories": ["frontend","javascript", "react", "nodejs", "backend"],
       "thumbnail": "/thumbnails/findbuddy.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Ecommerce",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "web", "frontend"],
+      "categories": ["frontend","javascript", "react", "backend", "nodejs"],
       "thumbnail": "/thumbnails/ecommerce.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
     },
     {
       "name": "Task List",
       "description": "Descripcion.",
-      "categories": ["javascript", "react", "web", "frontend"],
+      "categories": ["frontend", "javascript", "react"],
       "thumbnail": "/thumbnails/tasklist.jpg",
       "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
-    },
-    {
-      "name": "Find Buddy Mobile",
-      "description": "Descripcion",
-      "categories": ["reactnative", "frontend", "mobile", "nodejs", "backend"],
-      "thumbnail": "/thumbnails/findbuddymobile.jpg",
-      "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
-    },
-    {
-      "name": "Task list Mobile",
-      "description": "Descripcion",
-      "minidescription":"Descripcion",
-      "categories": ["reactnative", "frontend", "mobile", "nodejs", "backend"],
-      "thumbnail": "/thumbnails/tasklistmobile.jpg",
-      "link": "https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"
-    },
-    {
-      "name": "Soon",
-      "description": "Soon",
-      "categories": ["typescript"],
-      "thumbnail": "/soon.png",
-      "link": ""
     }
   ]
 }

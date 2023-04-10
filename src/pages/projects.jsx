@@ -18,9 +18,10 @@ import {
 	ModalCloseButton,
     useDisclosure,
 } from "@chakra-ui/react";
-import React from 'react'
+import React from 'react';
 
 import { useEffect, useState } from "react";
+
 
 var setCategory;
 var category;

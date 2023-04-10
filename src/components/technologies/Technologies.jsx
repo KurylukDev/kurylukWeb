@@ -29,9 +29,6 @@ export default function Technology() {
 <TechIcon id={"tailwindcss"} />
 <TechIcon id={"nextjs"} />
 <TechIcon id={"node"} />
-<TechIcon id={"python"} />
-<TechIcon id={"flask"} />
-<TechIcon id={"django"} />
 <TechIcon id={"git"} />
 <TechIcon id={"github"} />
 <TechIcon id={"chakara"} />

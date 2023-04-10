@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, Heading, Button } from "@chakra-ui/react";
 import '../styles/index.css'
 
 export default function Cv() {
