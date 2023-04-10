@@ -7,7 +7,7 @@ function ContactForm() {
   if (state.succeeded) {
       return ( 
         <Box display={"flex"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"}>
-          <img className={styles["imgSend"]} src="./public/mail.gif" alt="" />
+          <img className={styles["imgSend"]} src="/mail.gif" alt="" />
           <Text fontWeight={"bold"} color={"green"} fontSize={"2rem"}>Thank You</Text>
           
       </Box>
