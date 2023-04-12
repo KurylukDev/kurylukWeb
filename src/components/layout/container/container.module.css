@@ -24,6 +24,10 @@
     .container {
         width: 88%;
     }
+    .page{
+        height: 100vh;
+        max-height: 1000px;
+    }
 }
 
 @media only screen and (max-width: 725px) {

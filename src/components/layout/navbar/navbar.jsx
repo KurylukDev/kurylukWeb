@@ -2,7 +2,6 @@ import { Box, Flex } from "@chakra-ui/react";
 
 import { BsHouse, BsFolder, BsPersonBadge, BsSave} from "react-icons/bs"
 import { BsDiscord, BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs"
-import CvModal from '../../modal/Modal'
 
 import SocialButton from "./social-button";
 

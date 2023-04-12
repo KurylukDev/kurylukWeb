@@ -11,7 +11,6 @@ const styles = {
             bg: 'url("/background.png") fixed',
             bgRepeat: "no-repeat",
             bgSize: "cover",
-            imageRendering: "pixelated",
             color: '#ddd',
 
         },

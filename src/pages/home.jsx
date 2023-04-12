@@ -8,7 +8,7 @@ export default function Home() {
         <Box>
             <PresentationCard />
 
-            <Box marginTop={"20px"}>
+            <Box marginTop={"20px"} marginBottom={"20px"}>
                 <Heading size={"xl"}>Who am I?</Heading>
                 <Text>
                     My name is Simon, I am a 22yo programmer from Argentina who likes to develop
