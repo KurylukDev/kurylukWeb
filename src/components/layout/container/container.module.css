@@ -24,6 +24,9 @@
     .container {
         width: 88%;
     }
+    .page {  
+        max-height: calc(100vh - 175px);
+    }
 }
 
 @media only screen and (max-width: 725px) {
