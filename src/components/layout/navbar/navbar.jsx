@@ -15,7 +15,7 @@ export default function Navbar() {
                 <Box>
                     <PageButton Icon={BsHouse} link={"/"} alt="home">Me</PageButton>
                     <PageButton Icon={BsFolder} link={"/projects"} alt="projects">Projects</PageButton>
-                    <PageButton Icon={BsPersonBadge} link={"/hireme"} alt="hirme">Hire Me</PageButton>
+                    <PageButton Icon={BsPersonBadge} link={"/hireme"} alt="hirme">Contact</PageButton>
                     <PageButton Icon={BsSave} link={"/Cv"} alt="cv">CV</PageButton>
                 </Box>
                 <Flex className={styles["social"]}>

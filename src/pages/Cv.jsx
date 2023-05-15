@@ -4,13 +4,13 @@ import '../styles/index.css'
 export default function Cv() {
     return (
         <Box>
-            <Heading display={"flex"} justifyContent={"space-between"} size={"xl"}>CV
-            <Button fontSize={'15px'}
+            <Heading display={"flex"} justifyContent={"space-between"} size={"xl"}>
+            <Button fontSize={'0.9rem'}
             as="a"
-            href="/cv.pdf"
+            href="/kurylukCv.pdf"
             download="/cv.pdf"
             >Download</Button>
-            <Button fontSize={'15px'}
+            <Button fontSize={'0.8rem'}
             as="a"
             href="/cv.pdf"
             download="/cv.pdf"

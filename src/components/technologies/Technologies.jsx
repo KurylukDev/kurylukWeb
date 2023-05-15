@@ -14,7 +14,7 @@ export default function Technology() {
     return (
         <Box backgroundColor={"purple.900"} marginTop={"20px"} marginBottom={"10px"} >
             <Box className={styles["page"]}>
-            <Box marginTop={"0px"}>
+            <Box marginTop={"0"}>
 <Heading size={"xl"}>Technology</Heading>
 </Box>
 <Flex marginTop={"15px"} justify={"start"}>
