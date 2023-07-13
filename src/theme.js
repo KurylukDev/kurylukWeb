@@ -8,7 +8,7 @@ const config = {
 const styles = {
     global: {
         body: {
-            bg: 'url("/background.png") fixed',
+            bg: 'url("/background2.gif") fixed',
             bgRepeat: "no-repeat",
             bgSize: "cover",
             color: '#ddd',
