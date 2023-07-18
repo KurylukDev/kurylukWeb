@@ -65,7 +65,7 @@ function ProjectCard({ link, name, description, categories, thumb }) {
           transform: "scale(1.02)",
         }}
       >
-        <Image src={thumb} borderRadius={"10px 10px 0 0"} width={"450px"} height={"150px"} margin={"auto"} alt={name}/>
+        <Image src={thumb} borderRadius={"10px 10px 0 0"} width={"100%"} height={"150px"} margin={"auto"} alt={name}/>
         <Box
           backgroundColor={"purple.800"}
           padding={"10px"}

@@ -18,7 +18,7 @@ export default function PresentationCard() {
         </Box>
         <Box marginLeft={"20px"}>
             <Heading size={"xl"}>Simon Femia Kuryluk</Heading>
-            <Text>⚛️ React frontend dev, backend on Python.</Text>
+            <Text>⚛️ React frontend dev, backend on Node.js.</Text>
             <Text>☕ Web dev and Mobile dev with 1 years of experience.</Text>
             <Text>💖 Coding solutions for people.</Text>
 
