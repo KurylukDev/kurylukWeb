@@ -11,7 +11,7 @@ export default function Home() {
             <Box marginTop={"20px"} marginBottom={"20px"}>
                 <Heading size={"xl"}>Who am I?</Heading>
                 <Text>
-                    My name is Simon, I am a 22yo programmer from Argentina who likes to develop
+                    My name is Simon, I am a 23yo programmer from Argentina who likes to develop
                     📖 libraries, 💻 APIs, 💜 utilities for People, 🎮 games, 💸 crypto and many more
                     varied things that come from my imagination.
                 </Text>
