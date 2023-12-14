@@ -7,8 +7,8 @@ export default function Cv() {
             <Heading display={"flex"} justifyContent={"space-between"} size={"xl"}>
             <Button fontSize={'0.9rem'}
             as="a"
-            href="/kurylukCv.pdf"
-            download="/cv.pdf"
+            href="/Curriculum_Vitae-2.pdf"
+            download="/Curriculum_Vitae-2.pdf"
             >Download</Button>
                 <img
                 alt="CV"
