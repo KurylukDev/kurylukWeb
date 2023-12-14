@@ -10,15 +10,9 @@ export default function Cv() {
             href="/kurylukCv.pdf"
             download="/cv.pdf"
             >Download</Button>
-            <Button fontSize={'0.8rem'}
-            as="a"
-            href="/cv.pdf"
-            download="/cv.pdf"
-            >Download - Low color printing</Button></Heading>
-            <Box marginTop={"10px"} justifyContent={"center"} display={"flex"} boxShadow='dark-lg'>
                 <img
                 alt="CV"
-                src="/kurylukCv.png"
+                src="/cv2.JPG"
                 width={"100%"}
                 height={"100%"}
                 ></img>
