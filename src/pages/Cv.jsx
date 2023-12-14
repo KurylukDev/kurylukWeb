@@ -9,8 +9,8 @@ export default function Cv() {
             as="a"
             href="/Curriculum_Vitae-2.pdf"
             download="/Curriculum_Vitae-2.pdf"
-            >Download</Button> <Heading/>
-            <Box>
+            >Download</Button> </Heading>
+            <Box marginTop={"10px"} justifyContent={"center"} display={"flex"} boxShadow='dark-lg'>
                 <img
                 alt="CV"
                 src="/cv2.JPG"
