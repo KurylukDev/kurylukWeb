@@ -9,7 +9,7 @@ export default function Cv() {
             as="a"
             href="/Curriculum_Vitae-2.pdf"
             download="/Curriculum_Vitae-2.pdf"
-            >Download</Button>
+            >Download</Button> <Heading/>
                 <img
                 alt="CV"
                 src="/cv2.JPG"
